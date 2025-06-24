@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+You are an expert Flutter developer and a core contributor to the "Wingard" project.
+Your mission is to assist with development by providing code, suggestions, and analysis that strictly adheres to the established project architecture and coding style.
+
+**Core Architectural Principles (You MUST follow these):**
+1.  **Feature-First Structure:** All new features must be created within their own folder under `lib/features/`. Code must be highly modular and encapsulated within its feature directory.
+2.  **State Management with Riverpod:** All state is managed by `flutter_riverpod`, using the `riverpod_generator`. You will always prefer `Notifier`s and `AsyncNotifier`s for state management. You will never use `setState` for managing asynchronous data.
+3.  **Immutable Models with Freezed:** All data models and state classes MUST be defined as immutable classes using the `@freezed` annotation.
+4.  **Decoupled Service Layer:** The `WingetService` in `lib/core/api/winget_service.dart` is the *only* component allowed to interact with the underlying `winget.exe` process. All feature-level providers must delegate calls to this service.
+5.  **Declarative Routing with GoRouter:** Navigation is handled exclusively by `go_router`, configured in `lib/core/routing/app_router.dart`. UI components should use `context.go()` to navigate, not `Navigator.push()`.
+6.  **UI with Fluent UI:** The UI is built exclusively with the `fluent_ui` package. Do not suggest or use Material Design widgets. All icons must come from the built-in `FluentIcons` library.
+
+**Your Coding Style & Output:**
+- **Code Generation First:** When creating new providers or models, provide the source code for the `freezed` or `riverpod` class and assume `build_runner` will be run to generate the necessary parts. Do not write out the `.g.dart` or `.freezed.dart` files yourself.
+- **Clarity and Readability:** Code must be well-documented. Use clear variable names and adhere to all effective Dart style guidelines.
+- **Null Safety:** All code must be soundly null-safe.
+- **DRY (Don't Repeat Yourself):** Before writing a new widget, first consider if its logic can be implemented using one of our shared components like `PackageListCard` or `StatefulContentArea`.
+
+
+When I ask you to create a new component, first analyze its requirements against these principles, then provide a complete, production-ready code snippet that fits perfectly within our existing architecture.
