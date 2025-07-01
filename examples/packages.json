@@ -1,0 +1,135 @@
+{
+	"$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate": "2025-06-26T09:22:44.008-00:00",
+	"Sources": [
+		{
+			"Packages": [
+				{
+					"PackageIdentifier": "7zip.7zip"
+				},
+				{
+					"PackageIdentifier": "Docker.DockerDesktop"
+				},
+				{
+					"PackageIdentifier": "Git.Git"
+				},
+				{
+					"PackageIdentifier": "Cyanfish.NAPS2"
+				},
+				{
+					"PackageIdentifier": "RARLab.WinRAR"
+				},
+				{
+					"PackageIdentifier": "JanDeDobbeleer.OhMyPosh"
+				},
+				{
+					"PackageIdentifier": "Google.Chrome"
+				},
+				{
+					"PackageIdentifier": "Microsoft.CLRTypesSQLServer.2019"
+				},
+				{
+					"PackageIdentifier": "OpenJS.NodeJS.LTS"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VisualStudio.2022.Community"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VisualStudio.2019.BuildTools"
+				},
+				{
+					"PackageIdentifier": "Adobe.CreativeCloud"
+				},
+				{
+					"PackageIdentifier": "AnyDesk.AnyDesk"
+				},
+				{
+					"PackageIdentifier": "Brave.Brave"
+				},
+				{
+					"PackageIdentifier": "Tonec.InternetDownloadManager"
+				},
+				{
+					"PackageIdentifier": "CodecGuide.K-LiteCodecPack.Mega"
+				},
+				{
+					"PackageIdentifier": "Microsoft.Edge"
+				},
+				{
+					"PackageIdentifier": "Valve.Steam"
+				},
+				{
+					"PackageIdentifier": "Lenovo.SystemUpdate"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VCRedist.2015+.x86"
+				},
+				{
+					"PackageIdentifier": "Python.Launcher"
+				},
+				{
+					"PackageIdentifier": "Microsoft.DotNet.Runtime.6"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VCRedist.2010.x86"
+				},
+				{
+					"PackageIdentifier": "Microsoft.PowerShell"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VCRedist.2015+.x64"
+				},
+				{
+					"PackageIdentifier": "LocalSend.LocalSend"
+				},
+				{
+					"PackageIdentifier": "Lenovo.ServiceBridge"
+				},
+				{
+					"PackageIdentifier": "Python.Python.3.13"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier": "Anysphere.Cursor"
+				},
+				{
+					"PackageIdentifier": "Canonical.Ubuntu"
+				},
+				{
+					"PackageIdentifier": "Microsoft.AppInstaller"
+				},
+				{
+					"PackageIdentifier": "Microsoft.UI.Xaml.2.8"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VCLibs.Desktop.14"
+				},
+				{
+					"PackageIdentifier": "Microsoft.WindowsTerminal"
+				}
+			],
+			"SourceDetails": {
+				"Argument": "https://cdn.winget.microsoft.com/cache",
+				"Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name": "winget",
+				"Type": "Microsoft.PreIndexed.Package"
+			}
+		},
+		{
+			"Packages": [
+				{
+					"PackageIdentifier": "XPFFTQ032PTPHF"
+				}
+			],
+			"SourceDetails": {
+				"Argument": "https://storeedgefd.dsx.mp.microsoft.com/v9.0",
+				"Identifier": "StoreEdgeFD",
+				"Name": "msstore",
+				"Type": "Microsoft.Rest"
+			}
+		}
+	],
+	"WinGetVersion": "1.11.400"
+}

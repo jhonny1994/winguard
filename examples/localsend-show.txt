@@ -1,0 +1,50 @@
+
+   - 
+   \ 
+   | 
+   / 
+   - 
+   \ 
+   | 
+                                                                                                                        
+Found LocalSend [LocalSend.LocalSend]
+Version: 1.17.0
+Publisher: Tien Do Nam
+Publisher Url: https://tienisto.com/
+Publisher Support Url: https://localsend.org/
+Author: Tien Do Nam
+Description: Share files to nearby devices. Free, open source, cross-platform. An open source cross-platform alternative to AirDrop.
+Homepage: https://localsend.org/
+License: Apache-2.0
+License Url: https://github.com/localsend/localsend/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2022-2024 Tien Do Nam
+Copyright Url: https://github.com/localsend/localsend/blob/main/LICENSE
+Release Notes:
+  Summary
+  A small interim release before WebRTC is stable (#2204)
+  - feat: add advanced setting to filter network interfaces (@Tienisto)
+  - feat(mobile): swipe gesture to select multiple media files (@Tienisto)
+  - feat(windows): when pasting an image, automatically convert it to PNG (@BrianMwit)
+  - feat(android): add option to open gallery when image/video was automatically saved (@Tienisto)
+  - fix: path traversal vulnerability when saving files (@Tienisto)
+  - fix: black screen when tapping on "Back" twice in "Share via link" (@Tienisto)
+  - fix(macos): window disappears on command key when minimize to tray is enabled (@Tienisto)
+  - fix(windows): do not poll local IP resulting in unwanted location permissions (@Tienisto)
+  Full Changelog
+Release Notes Url: https://github.com/localsend/localsend/releases/tag/v1.17.0
+Tags:
+  cross-platform
+  file-sharing
+  flutter
+  local
+  shareit
+  sharik
+  trebleshot
+  wifi
+Installer:
+  Installer Type: inno
+  Installer Locale: en-US
+  Installer Url: https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-windows-x86-64.exe
+  Installer SHA256: e554dcf9dc94dd842b54d464b559ac1d3631427bb02480c9a74785ec47ce639c
+  Release Date: 2025-02-20
+  Offline Distribution Supported: true

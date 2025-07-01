@@ -106,26 +106,22 @@ Represents a long-running operation like an install or update.
     *   **Throws:** `WingetException` on failure.
 
 *   **`Future<List<Package>> getInstalledPackages()`**
-    *   **Description:** Executes `winget export` to a temporary JSON file and parses the result. This is the robust method for getting installed apps.
+    *   **Description:** Executes `winget list` and parses the line-delimited JSON stream output. This is the robust method for getting all installed apps recognized by winget.
     *   **Returns:** A `Future` that completes with a `List<Package>`.
     *   **Throws:** `WingetException` on failure.
 
-*   **`Future<PackageDetails> getPackageDetails(String packageId, {Locale? locale})`**
-    *   **Description:** Executes `winget show --id <packageId>` and parses the full metadata.
+*   **`Future<PackageDetails> getPackageDetails(String packageId)`**
+    *   **Description:** Executes `winget show --id <packageId>` and parses the full metadata from the resulting JSON stream.
     *   **Parameters:**
         *   `packageId`: The unique ID of the package to show.
-        *   `locale`: An optional locale for requesting translated metadata.
     *   **Returns:** A `Future` that completes with a rich `PackageDetails` object.
     *   **Throws:** `WingetException` on failure.
 
-#### **4.3. Action Methods**
-*   **`WingetTask upgradePackage(String packageId)`**
-    *   **Description:** Initiates a `winget upgrade --id <packageId>` operation. This method returns immediately with a `WingetTask` object, allowing the caller to stream the output and await the result.
-    *   **Returns:** A `WingetTask` object.
+#### **4.3. Action Methods (Phase 4)
+*This section defines the contract for future action-oriented methods. Implementation is planned for Phase 4.*
 
+*   **`WingetTask upgradePackage(String packageId)`**
 *   **`WingetTask uninstallPackage(String packageId)`**
-    *   **Description:** Initiates a `winget uninstall --id <packageId>` operation.
-    *   **Returns:** A `WingetTask` object.
 
 #### **4.4. Icon Fetching Logic**
 *   **`Future<String?> getIconUrl(String packageId)`**
@@ -138,3 +134,6 @@ Represents a long-running operation like an install or update.
     *   **Returns:** A `Future` that completes with the best available icon URL as a `String`, or `null` if no icon could be found through Tiers 1 or 2.
 
 This API specification provides a clear and stable contract for the core service, enabling parallel development of the UI and state management layers.
+
+---
+*This document will be updated as the project progresses into Phase 4 and beyond.*
