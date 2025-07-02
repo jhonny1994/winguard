@@ -219,7 +219,6 @@ class WingetService {
     if (cleanLines.length < 3) return [];
 
     // Use standard winget column positions (based on typical winget output format)
-    // From our tests: "Name                         Id                                    Version        Available     Source"
     const nameStart = 0;
     const idStart = 29;
     const versionStart = 67;
